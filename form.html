@@ -1,0 +1,97 @@
+<!Doctype html>
+<html>
+<head>
+	<title>Types of Forms</title>
+</head>
+
+<body>
+
+<form action="http://example.com" method="get">
+	<p>Username <input type="text" name="Username" size="15" maxlength="30"/></p>
+	
+</form>
+
+
+<form action="http://example.com">
+	<p>Please select your fvourite genre
+		<br>
+	<input type="checkbox" name="genre" value="Rock" checked="checked"/>Rock
+	<input type="checkbox" name="genre" value="Pop"/>Pop
+	</p>
+</form>
+ <form action="http://example.com" method="get">
+	<p>Please select your Smartphone</p>
+	<select name="Devices">
+		<option value="Iphone X">Iphone X</option>
+	    <option value="Samsung Galaxy S9+">Samsung Galaxy S9+</option>
+	    <option value="Google Pixel 2XL">Google Pixel 2XL</option>
+	</select>
+	
+
+	<p>Please select your Smartphone</p>
+	<select name="Devices" size="10" multiple="multiple">
+		<option value="Iphone X" selected="selected">Iphone X</option>
+	    <option value="Samsung Galaxy S9+" selected="selected">Samsung Galaxy S9+</option>
+	    <option value="Google Pixel 2XL">Google Pixel 2XL</option>
+	</select>
+
+
+</form>
+
+<form action="http://example.com" method="post">
+	<p>This is for upload purposes</p>
+	<input type="file" name=".pdf-files"/><br>
+	<input type="submit" name="upload" value="upload"/>
+	
+</form>
+
+<form action="http://example.com" method="get">
+	<p>This is for Newsletters via Email</p>
+	<input type="text" name="email"/>
+	<input type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeReb5SIdoz7OVT21C3-ApBmO6H30O4XwFKikYD2ri-PYrBuRV" 
+	width="150" height="50" />
+	
+</form>
+
+
+<p>Example of a "hidden" form control</p><!-- This Is IMPORTANT -->
+
+<form>
+  <div>
+    <label for="title">Post title:</label>
+    <input type="text" id="title" name="title" value="My excellent blog post">
+  </div>
+  <div>
+    <label for="content">Post content:</label>
+    <textarea id="content" name="content" cols="60" rows="5">
+This is the content of my excellent blog post. I hope you enjoy it!
+    </textarea>
+  </div>
+  <div>
+    <button type="submit">Update post</button>
+  </div>
+  <!--This part is For the HIDDEN form control-->
+
+  <input type="hidden" id="postId" name="postId" value="34657">
+</form>
+
+
+<form>
+	<labele>Age:<input type="text" name="age"/></label>
+    <br>
+    <input id="female" type="radio" name="gender" value="f">
+    <lable for="female">Female</lable>
+    <input id="male" type="radio" name="gender" value="m">
+    <label for="male">Male</label>
+    <input id="other" type="radio" name="gender" value="other">
+    <label for="other">Other</label>
+</form>
+ 
+<form action="http://example.com" method="get">
+	<p>Search:</p>
+	<input type="search" name="search" placeholder="Enter Keyword"/>
+	<input type="submit" name="Search"/><!--not correctly supported in firefox & Chrome-->	
+</form>
+
+</body>
+</html>
